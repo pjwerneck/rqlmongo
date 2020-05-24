@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "rqlmongo"
+version = "0.1.1"
+description = "Resource Query Language for PyMongo"
+authors = ["Pedro Werneck <pjwerneck@gmail.com>"]
+license = "MIT"
+readme = 'README.md'
+
+repository = "https://github.com/pjwerneck/rqlmongo"
+homepage = "https://github.com/pjwerneck/rqlmongo"
+
+keywords = ['pymongo', 'mongodb', 'rql', 'querying', 'httpapi']
+
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pyrql = "^0.6.1"
+pymongo = "^3.11.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+pytest-server-fixtures = "^1.7.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 119
+target-version = ["py36"]
